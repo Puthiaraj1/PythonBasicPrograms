@@ -4,7 +4,7 @@ high = 1000
 print("Please guess a number between {} and  {}".format(low, high))
 input("Please enter to start")
 guesses = 1
-while True:
+while low != high :
     guess = low + (high - low) // 2
     high_low = input("My guess is {}. Should I guess higher or lower? "
                      "Enter h or l, or c if my guess was correct "
@@ -21,3 +21,6 @@ while True:
     else:
         print("Please enter h, l or c")
     guesses += 1  # here we used augmented assignment instead of regular assignment
+else:
+    print("You thought of the number {}".format(low))
+    print("I got it in {} guesses !".format(guesses))

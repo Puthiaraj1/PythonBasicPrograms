@@ -11,7 +11,7 @@ available_exits = ["east","north east","south"]
 chosen_exit = ""
 while chosen_exit not in available_exits:
     chosen_exit = input("Please choose a diffent exit:")
-    if chosen_exit == 'quit':
+    if chosen_exit.casefold() == 'quit':
         print("Game over !!!")
         break
 else:

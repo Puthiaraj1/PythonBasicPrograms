@@ -1,4 +1,6 @@
 age = 25
+
+print(f"My age is {age} years")
 # 'str' is a funtion to convert everything to String
 print("My age is " + str(age) + " years")
 # Using format function , you can convert int to String. This similar to Java String.format function
